@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImmoLax</title>
+    <!-- fontawsome version4 -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<!-- bootstrap cdn -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- bootstrap fontawsome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
+    <!-- css  -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile.css">
+     <!-- ui jquery range -->
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header class="elder" id="head-section">
+        <div class="container ">
+          <nav class="navbar navbar-expand-lg  fixed-top" id="nav-sticky">
+            <div class="container">
+              <a class="navbar-brand" href="./index.html">Immo <span>Lax</span><figcaption class="text-muted">Real Estate Agent</figcaption></a>         
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "><i class="fa fa-align-center"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#"><i class="bi bi-search"></i></a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./signup.html">SignUp</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Home <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./index.html">Home1</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Property <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./property-grid.html">Grid</a></li>
+                      <li><a class="dropdown-item" href="./property-list.html">List</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Agents<i class="bi bi-chevron-down"></i>
+                    </a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blogs <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./property-details.html">Details</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                </ul>            
+              </div>
+            </div>
+          </nav>
+        </div>
+    
+          <div class="container page">
+              <div class="row">
+                <div class="col-md-6 pageName">
+                    <h5 class="">Property List</h5>               
+                </div>
+                <div class="col-md-6 page-path">
+                  <h5 class=" "> <i class="bi bi-house-door"></i><span>Home / Property List</span></h5>
+                </div>              
+              </div>          
+              <!-- <div class="submitButton">
+                 <button class="header-button"> Submit Property</button>
+              </div> -->
+          </div>
+    
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+       <section class="tabss">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-md-12">
+               <div class="pill">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Rent</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"  href="#">Buy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sell</a>
+                  </li>                  
+                </ul>
+               </div>
+             </div>
+           </div>
+           <div class="row tab-forms">
+            <form class="row g-3">
+              <div class="col-md-2 form-team">
+                <label for="inputState" class="form-label">Property Type</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Select Type<form-team/option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-2 form-team">
+                <label for="inputEmail4" class="form-label">Your Location</label>
+                <input type="email" class="form-control" placeholder="Enter Address" id="inputEmail4">
+              </div>
+              <div class="col-md-2 form-team">
+                <label for="inputState" class="form-label">Bedrooms</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-2 form-team">
+                <label for="inputState" class="form-label">Bathrooms</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>              
+              <div class="col-md-2">                   
+                <div class="ranger">
+                  <p>
+                    <label for="amount">Price Range</label>
+                    <input type="text" id="amount" readonly style="border:0; color:#929292;">
+                  </p>                   
+                  <div id="slider-range"></div>
+                </div>
+               </div>                
+              <div class="col-md-2 searcher">                                       
+                <div class="input-group">  
+                  <i class="bi bi-search"></i>                       
+                  <input type="text" class="form-control"  placeholder="Search now" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>                  
+                </div>                                                
+              </div>
+            </form>
+         </div>
+       </section>
+       <section>
+         <div class="container">
+           <div class="row grid-header">
+             <div class="col-md-6 heading">
+              <h6>Found 12 Properties</h6>
+             </div>
+             <div class="col-md-4 d-flex like-save">
+              <i class="bi bi-heart"></i><span>save search</span>
+              <div class="list-icon active"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+              <div class="list-icon"><i class="bi bi-list-ul"></i></div>
+             </div>
+             <div class="col-md-2 selectors">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Sort By</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+             </div>             
+           </div>
+           <div class="row lists">
+               <div class="col-md-6 p-0 m-0">
+                <div class="img-container-list">
+                    <div class="d-flex justify-content-between align-items-center p-2 first-list">
+                      <span class="percent-list">hot</span>                                                 
+                   </div> 
+                   <div class="d-flex justify-content-between align-items-center py-2 second-list">                        
+                     <span class="percent1-list">Sale</span>                          
+                   </div>                       
+                     <img src="./Assets/sign.jpg" class="img-fluid">
+                     <span class="wishlist-list d-flex justify-content-between "><i class="fa fa-heart-o">  save</i></span> 
+                </div>
+               </div>
+               <div class="col-md-6 p-0 m-0">
+                <div class="product-detail-container-list">
+                    <div class="d-block ">
+                      <h3 class="mb-0">Good Life Property Ltd</h3> 
+                      <img src="./Assets/place.png" alt="">
+                      <span class="text-muted">970 Torriford street ,Torrington 5676</span>
+                      <hr class="dropdown-divider bg-light">
+                  </div>
+                  <div class="d-flex py-2">
+                    <div class="births-list">
+                      <span class="text-muted">4 </span><img src="./Assets/bed (2).png" alt="">
+                    </div>
+                    <div class="births-list">
+                     <span class="text-muted">4 </span><img src="./Assets/bed (2).png" alt="">
+                   </div>
+                   <div class="births-list">
+                     <span class="text-muted">4 </span><img src="./Assets/bed (2).png" alt="">
+                   </div>                   
+                  </div>
+                  <div class="terms">
+                    <hr class="dropdown-divider bg-light">
+                    <h5>$11,250/m</h5>
+                   </div>         
+                  </div>
+               </div>
+           </div>
+           <div class="row lists">
+            <div class="col-md-6 p-0 m-0">
+             <div class="img-container-list">
+                 <div class="d-flex justify-content-between align-items-center p-2 first-list">
+                   <span class="percent-list">hot</span>                                                 
+                </div> 
+                <div class="d-flex justify-content-between align-items-center py-2 second-list">                        
+                  <span class="percent1-list">Sale</span>                          
+                </div>                       
+                  <img src="./Assets/sign.jpg" class="img-fluid">
+                  <span class="wishlist-list d-flex justify-content-between "><i class="fa fa-heart-o">  save</i></span> 
+             </div>
+            </div>
+            <div class="col-md-6 p-0 m-0">
+             <div class="product-detail-container-list">
+                 <div class="d-block ">
+                   <h3 class="mb-0">Good Life Property Ltd</h3> 
+                   <img src="./Assets/place.png" alt="">
+                   <span class="text-muted">970 Torriford street ,Torrington 5676</span>
+                   <hr class="dropdown-divider bg-light">
+               </div>
+               <div class="d-flex py-2">
+                 <div class="births-list">
+                   <span class="text-muted">4 </span><img src="./Assets/bed (2).png" alt="">
+                 </div>
+                 <div class="births-list">
+                  <span class="text-muted">4 </span><img src="./Assets/bed (2).png" alt="">
+                </div>
+                <div class="births-list">
+                  <span class="text-muted">4 </span><img src="./Assets/bed (2).png" alt="">
+                </div>                   
+               </div>
+               <div class="terms">
+                <hr class="dropdown-divider bg-light">
+                <h5>$11,250/m</h5>
+               </div>         
+               </div>
+            </div>
+        </div>
+        <div class="row lists">
+            <div class="col-md-6 p-0 m-0">
+             <div class="img-container-list">
+                 <div class="d-flex justify-content-between align-items-center p-2 first-list">
+                   <span class="percent-list">hot</span>                                                 
+                </div> 
+                <div class="d-flex justify-content-between align-items-center py-2 second-list">                        
+                  <span class="percent1-list">Sale</span>                          
+                </div>                       
+                  <img src="./Assets/sign.jpg" class="img-fluid">
+                  <span class="wishlist-list d-flex justify-content-between "><i class="fa fa-heart-o">  save</i></span> 
+             </div>
+            </div>
+            <div class="col-md-6 p-0 m-0">
+             <div class="product-detail-container-list">
+                 <div class="d-block ">
+                   <h3 class="mb-0">Good Life Property Ltd</h3> 
+                   <img src="./Assets/place.png" alt="">
+                   <span class="text-muted">970 Torriford street ,Torrington 5676</span>
+                   <hr class="dropdown-divider bg-light">
+               </div>
+               <div class="d-flex py-2">
+                 <div class="births-list">
+                   <span class="text-muted">4 </span><img src="./Assets/bed (2).png" alt="">
+                 </div>
+                 <div class="births-list">
+                  <span class="text-muted">4 </span><img src="./Assets/bed (2).png" alt="">
+                </div>
+                <div class="births-list">
+                  <span class="text-muted">4 </span><img src="./Assets/bed (2).png" alt="">
+                </div>                   
+               </div>
+               <div class="terms">
+                <hr class="dropdown-divider bg-light">
+                <h5>$11,250/m</h5>
+               </div>         
+               </div>
+            </div>
+        </div>
+       
+          
+           <div class="row pagination">
+             <div class="col-md-12 ">
+              <div class="paginator text-center">
+                <ul class="unstyled  d-flex justify-content-center list ">
+                  <li><div class="pagin "><i class="bi bi-chevron-left"></i></div></li>
+                  <li><div class="pagin">1</div></li>
+                  <li><div class="pagin">2</div></li>
+                  <li><div class="pagin active"><i class="bi bi-chevron-right"></i></div></li>
+                 </ul>
+               </div>
+             </div>
+           </div>         
+         </div>
+       </section>
+       <section class="section-last">
+        <div class="container">
+          <div class="row master">
+            <div class="col-md-5">
+              <div class="lst-image">
+                <!-- <img src="./assets/cnt.jpg" alt=""> -->
+              </div>                 
+            </div>
+            <div class="col-md-7 master-head">
+             <h6>Call To Action <span class="px-2"><img src="./assets/minus .png" alt=""></span> </h6>
+             <h2 class="spFont">Contact With Our <br> Certified Agent</h2>
+             <div class="appointment-button">
+              <a class="watsup" href="https://wa.me/1XXXXXXXXXX"> </a>
+               <a  href="tel:555-555-5555" class="calling"><i class="bi bi-telephone"></i>  Make a Call</a>
+               <button class="apoint">Get Appointment</button>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>     
+    </main>
+
+
+
+
+
+
+
+    <footer class="footers bg-light">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 footers-one">
+                     <h3>About Us</h3>
+                     <div class="footers-info ">
+                         <p class="text-muted">Cras sociis natoque penatibus et magnis Lorem Ipsum tells about the compmany right now the best. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sit.</p>
+                     </div>
+                     <div class="social-icons "> 
+                     <div class="social-width active"><a href="#"><i id="social-fb" class="fa fa-facebook fa-2x social active"></i></a></div>
+                     <div class="social-width"> <a href="#"><i id="social-tw" class="fa fa-twitter fa-2x social"></i></a></div>
+                     <div class="social-width"><a href="#"><i id="social-gp" class="fa fa-dribbble fa-2x social"></i></a></div>
+                     <div class="social-width"><a href="#"><i id="social-em" class="fa fa-youtube fa-2x social"></i></a></div>
+                    </div>
+                 </div>
+                <div class="col-xs-12  col-md-6 footers-two">
+                     <h3>Services </h3>
+                     <ul class="list-unstyled">
+                      <div class="col">
+                        <li><a href="./index.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="./about.html"> <i class="fa fa-long-arrow-right" aria-hidden="true"></i>About</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Services</a></li>
+                        <li><a href="./contact.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Portfolio</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Pricing</a></li>
+                      </div>
+                      <div class="col px-4">
+                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Case study</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>News</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Terms</a></li>                   
+                      </div>
+                     </ul>
+                     <div class="footer-button">
+                      <button class="btn">
+                        <a href="#head-section"><i class="bi bi-arrow-up"></i></a>
+                   </button>
+                     </div>
+                </div>                                      
+            </div>
+        </div>
+    </footer>  
+        <!-- script -->    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        <script src="./main.js"></script>
+    
+</body>
+</html>
